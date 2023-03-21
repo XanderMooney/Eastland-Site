@@ -1,0 +1,49 @@
+#main {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 4rem;
+    margin-right: 0.5rem;
+}
+.card {
+    margin: 0;
+    width: 22vw;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items:center;
+    color: var(--black);
+    padding: 0.5rem;
+}
+.card-img-top {
+    position: relative;
+    object-fit:contain;
+    width: 100%;
+    aspect-ratio: 1/1;
+    transition: width 100ms ease !important;
+}
+.collapse *,
+.collapsing * {
+    color: var(--black) !important;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.card-img-top:active {
+    width: 95%;
+}
+
+@media (min-aspect-ratio: 1/1) { /* Horizontal Devices Only */
+    
+    .card:not(:has(.show)) .card-img-top:hover {
+        filter:brightness(0.9);
+    }
+}
+@media (max-aspect-ratio: 1.5/1) {
+
+    /* on (almost) vertically oriented devices */
+    #main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        width: 45vw;
+    }
+}
