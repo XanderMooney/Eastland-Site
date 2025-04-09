@@ -12,9 +12,3 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
-@media (min-aspect-ratio: 1/1) { /* On horizontal devices */
-    #roeth:hover {
-        filter: hue-rotate(90deg);
-    }
-}

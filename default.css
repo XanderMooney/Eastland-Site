@@ -48,12 +48,7 @@ body {
     overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
 }
 
@@ -82,7 +77,7 @@ nav {
 nav a {
     font-size: 105%;
     margin-top: 1.5vh;
-    transition: margin-top 400ms ease;
+    transition: padding-top 400ms ease;
     text-decoration: none;
     color: var(--white);
 }
@@ -237,7 +232,7 @@ footer {
 
     /* horizontally oriented devices */
     nav a:hover {
-        margin-top: 2.5vh;
+        padding-top: 2.5vh;
         text-decoration: underline;
         color: var(--white);
     }

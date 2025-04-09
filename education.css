@@ -6,6 +6,7 @@
 }
 .card {
     margin: 0;
+    margin-top: 2.5rem;
     width: 22vw;
     aspect-ratio: 1/1;
     justify-content: center;
